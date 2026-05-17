@@ -295,6 +295,198 @@
   --tab-active: #5c4a3a;
 }
 
+/* ── Dracula ────────────────────────────────── */
+[data-theme="dracula"] {
+  --bg-primary: #1e1e2e;
+  --bg-secondary: #23233a;
+  --bg-surface: #282840;
+  --bg-elevated: #2d2d48;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --border-color: #3a3a58;
+  --border-light: #484870;
+  --text-primary: #e6e6f0;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6c6c8a;
+  --accent: #bd93f9;
+  --accent-hover: #a679f5;
+  --accent-bg: rgba(189, 147, 249, 0.1);
+  --accent-border: rgba(189, 147, 249, 0.3);
+  --sidebar-bg: #282840;
+  --sidebar-active: rgba(189, 147, 249, 0.1);
+  --chat-bg: #23233a;
+  --bubble-user-bg: #3a2a5a;
+  --bubble-user-border: #5a3a8a;
+  --bubble-assistant-bg: #2d2d48;
+  --bubble-assistant-border: #3a3a58;
+  --code-bg: #1a1a2e;
+  --scrollbar-thumb: #3a3a58;
+  --scrollbar-hover: #484870;
+  --titlebar-bg: #282840;
+  --input-bg: #2d2d48;
+  --badge-bg: #3a2a5a;
+  --badge-border: #5a3a8a;
+  --badge-text: #d4b8ff;
+  --panel-header: #a0a0b8;
+  --tab-inactive: #6c6c8a;
+  --tab-active: #e6e6f0;
+}
+
+/* ── Nord ───────────────────────────────────── */
+[data-theme="nord"] {
+  --bg-primary: #2e3440;
+  --bg-secondary: #343a4a;
+  --bg-surface: #3b4252;
+  --bg-elevated: #434c5e;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --border-color: #4c566a;
+  --border-light: #5c667a;
+  --text-primary: #e5e9f0;
+  --text-secondary: #9aa5b8;
+  --text-muted: #6c7890;
+  --accent: #5e81ac;
+  --accent-hover: #4e71a0;
+  --accent-bg: rgba(94, 129, 172, 0.1);
+  --accent-border: rgba(94, 129, 172, 0.3);
+  --sidebar-bg: #3b4252;
+  --sidebar-active: rgba(94, 129, 172, 0.1);
+  --chat-bg: #343a4a;
+  --bubble-user-bg: #2a4060;
+  --bubble-user-border: #3a5a80;
+  --bubble-assistant-bg: #434c5e;
+  --bubble-assistant-border: #4c566a;
+  --code-bg: #2e3440;
+  --scrollbar-thumb: #4c566a;
+  --scrollbar-hover: #5c667a;
+  --titlebar-bg: #3b4252;
+  --input-bg: #434c5e;
+  --badge-bg: #2a4060;
+  --badge-border: #3a5a80;
+  --badge-text: #8bb8e0;
+  --panel-header: #9aa5b8;
+  --file-change-m: #d08770;
+  --file-change-a: #a3be8c;
+  --file-change-d: #bf616a;
+  --tab-inactive: #6c7890;
+  --tab-active: #e5e9f0;
+}
+
+/* ── Sakura ─────────────────────────────────── */
+[data-theme="sakura"] {
+  --bg-primary: #1e1218;
+  --bg-secondary: #26161e;
+  --bg-surface: #301c26;
+  --bg-elevated: #3a2230;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --border-color: #4c2e3e;
+  --border-light: #5c3a4e;
+  --text-primary: #f0e0e8;
+  --text-secondary: #b890a0;
+  --text-muted: #7a5a6a;
+  --accent: #ec4899;
+  --accent-hover: #db2777;
+  --accent-bg: rgba(236, 72, 153, 0.1);
+  --accent-border: rgba(236, 72, 153, 0.3);
+  --sidebar-bg: #301c26;
+  --sidebar-active: rgba(236, 72, 153, 0.1);
+  --chat-bg: #26161e;
+  --bubble-user-bg: #4a1a34;
+  --bubble-user-border: #6a2a4e;
+  --bubble-assistant-bg: #3a2230;
+  --bubble-assistant-border: #4c2e3e;
+  --code-bg: #1e1218;
+  --scrollbar-thumb: #4c2e3e;
+  --scrollbar-hover: #5c3a4e;
+  --titlebar-bg: #301c26;
+  --input-bg: #3a2230;
+  --badge-bg: #4a1a34;
+  --badge-border: #6a2a4e;
+  --badge-text: #f9a8d4;
+  --panel-header: #b890a0;
+  --file-change-m: #f59e0b;
+  --file-change-a: #10b981;
+  --file-change-d: #ef4444;
+  --tab-inactive: #7a5a6a;
+  --tab-active: #f0e0e8;
+}
+
+/* ── Midnight ───────────────────────────────── */
+[data-theme="midnight"] {
+  --bg-primary: #0a0e1a;
+  --bg-secondary: #0e1424;
+  --bg-surface: #141c30;
+  --bg-elevated: #1a2440;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --border-color: #243050;
+  --border-light: #304068;
+  --text-primary: #dce0f0;
+  --text-secondary: #8890b0;
+  --text-muted: #506080;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-bg: rgba(99, 102, 241, 0.1);
+  --accent-border: rgba(99, 102, 241, 0.3);
+  --sidebar-bg: #141c30;
+  --sidebar-active: rgba(99, 102, 241, 0.1);
+  --chat-bg: #0e1424;
+  --bubble-user-bg: #1a2260;
+  --bubble-user-border: #2a3a80;
+  --bubble-assistant-bg: #1a2440;
+  --bubble-assistant-border: #243050;
+  --code-bg: #080c1a;
+  --scrollbar-thumb: #243050;
+  --scrollbar-hover: #304068;
+  --titlebar-bg: #141c30;
+  --input-bg: #1a2440;
+  --badge-bg: #1a2260;
+  --badge-border: #2a3a80;
+  --badge-text: #a5b4fc;
+  --panel-header: #8890b0;
+  --file-change-m: #f59e0b;
+  --file-change-a: #10b981;
+  --file-change-d: #ef4444;
+  --tab-inactive: #506080;
+  --tab-active: #dce0f0;
+}
+
+/* ── Solarized ──────────────────────────────── */
+[data-theme="solarized"] {
+  --bg-primary: #002b36;
+  --bg-secondary: #073642;
+  --bg-surface: #0d4a52;
+  --bg-elevated: #145a64;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --border-color: #1a6a76;
+  --border-light: #2a7a86;
+  --text-primary: #e0e8e6;
+  --text-secondary: #93a1a1;
+  --text-muted: #658086;
+  --accent: #2aa198;
+  --accent-hover: #1a9188;
+  --accent-bg: rgba(42, 161, 152, 0.1);
+  --accent-border: rgba(42, 161, 152, 0.3);
+  --sidebar-bg: #0d4a52;
+  --sidebar-active: rgba(42, 161, 152, 0.1);
+  --chat-bg: #073642;
+  --bubble-user-bg: #104a54;
+  --bubble-user-border: #1a6a76;
+  --bubble-assistant-bg: #145a64;
+  --bubble-assistant-border: #1a6a76;
+  --code-bg: #002b36;
+  --scrollbar-thumb: #1a6a76;
+  --scrollbar-hover: #2a7a86;
+  --titlebar-bg: #0d4a52;
+  --input-bg: #145a64;
+  --badge-bg: #104a54;
+  --badge-border: #1a6a76;
+  --badge-text: #6dd5c8;
+  --panel-header: #93a1a1;
+  --file-change-m: #b58900;
+  --file-change-a: #859900;
+  --file-change-d: #dc322f;
+  --tab-inactive: #658086;
+  --tab-active: #e0e8e6;
+}
+
 body {
   margin: 0;
   background: var(--bg-primary);
@@ -320,6 +512,15 @@ body {
   background: var(--scrollbar-hover);
 }
 
+/* Hide scrollbar for tab bar */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 pre {
   background: var(--code-bg);
   border-radius: 6px;
@@ -332,4 +533,105 @@ code {
   font-family: var(--font-mono);
   font-size: 12px;
   line-height: 1.5;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-dot {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.3; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.2s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out;
+}
+
+.message-enter {
+  animation: fade-in 0.25s ease-out;
+}
+
+[data-group] > [data-separator]:active > div,
+[data-group] > [data-separator][data-active] > div {
+  background: var(--accent) !important;
+  width: 3px !important;
+  opacity: 0.6;
+}
+
+/* Streaming cursor */
+.streaming-cursor::after {
+  content: '▊';
+  animation: blink 1s step-end infinite;
+  color: var(--accent);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Smooth transitions for all interactive elements */
+button, input, textarea {
+  transition: opacity 0.15s, border-color 0.2s, background-color 0.2s;
+}
+
+/* Git gutter diff decorations */
+.diff-added-glyph {
+  border-left: 3px solid #10b981;
+  margin-left: 1px;
+}
+.diff-modified-glyph {
+  border-left: 3px solid #f59e0b;
+  margin-left: 1px;
+}
+.diff-added-line {
+  background: rgba(16, 185, 129, 0.08);
+}
+.diff-modified-line {
+  background: rgba(245, 158, 11, 0.08);
+}
+
+/* Breakpoint gutter glyphs */
+.breakpoint-glyph {
+  background: #ef4444;
+  border-radius: 50%;
+  width: 8px !important;
+  height: 8px !important;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+.breakpoint-glyph-disabled {
+  background: transparent;
+  border: 1px solid #ef4444;
+  border-radius: 50%;
+  width: 8px !important;
+  height: 8px !important;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+/* Better focus ring */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* Hover highlight for clickable rows */
+.hover-highlight:hover {
+  background: var(--bg-hover) !important;
 }

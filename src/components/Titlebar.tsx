@@ -1,11 +1,18 @@
 import { useState, useRef, useEffect } from 'react'
 import { Palette } from 'lucide-react'
 import { useStore, themeNames } from '../stores/useStore'
-import ThemeSwitcher from './ThemeSwitcher'
+import { useCustomThemeStore } from '../theme/customThemeStore'
+import ThemeSwitcher from '../theme/ThemeSwitcher'
 
 export default function Titlebar() {
   const [showThemePicker, setShowThemePicker] = useState(false)
   const theme = useStore((s) => s.theme)
+  const activeCustomId = useCustomThemeStore((s) => s.activeCustomThemeId)
+  const customThemes = useCustomThemeStore((s) => s.customThemes)
+
+  const displayThemeName = activeCustomId
+    ? customThemes.find((t) => t.id === activeCustomId)?.name || themeNames[theme]
+    : themeNames[theme]
   const btnRef = useRef<HTMLButtonElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
 
@@ -28,15 +35,12 @@ export default function Titlebar() {
   return (
     <div
       className="flex items-center px-4 py-2.5 select-none shrink-0"
-      style={{ background: 'var(--titlebar-bg)', borderBottom: '1px solid var(--border-color)' }}
+      style={{
+        background: 'var(--titlebar-bg)',
+        borderBottom: '1px solid var(--border-color)',
+        boxShadow: 'inset 0 3px 0 var(--titlebar-decoration, transparent)',
+      }}
     >
-      {/* Traffic light dots */}
-      <div className="flex gap-1.5 mr-4">
-        <div className="w-3 h-3 rounded-full" style={{ background: '#ff5f56' }} />
-        <div className="w-3 h-3 rounded-full" style={{ background: '#ffbd2e' }} />
-        <div className="w-3 h-3 rounded-full" style={{ background: '#27c93f' }} />
-      </div>
-
       {/* Title */}
       <div className="flex-1 text-center">
         <span className="text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>
@@ -45,7 +49,7 @@ export default function Titlebar() {
       </div>
 
       {/* Theme switcher button */}
-      <div className="relative flex items-center gap-3">
+      <div className="relative flex items-center gap-1.5">
         <button
           ref={btnRef}
           onClick={() => setShowThemePicker(!showThemePicker)}
@@ -58,7 +62,7 @@ export default function Titlebar() {
           title="切换主题"
         >
           <Palette size={14} />
-          <span>{themeNames[theme]}</span>
+          <span>{displayThemeName}</span>
         </button>
 
         {showThemePicker && (
@@ -67,17 +71,6 @@ export default function Titlebar() {
           </div>
         )}
 
-        {/* Badge */}
-        <div
-          className="text-xs font-semibold px-2 py-0.5 rounded"
-          style={{
-            background: 'var(--badge-bg)',
-            color: 'var(--badge-text)',
-            border: '1px solid var(--badge-border)',
-          }}
-        >
-          DeepSeek V4 Flash
-        </div>
       </div>
     </div>
   )

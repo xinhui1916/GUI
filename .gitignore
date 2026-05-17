@@ -33,3 +33,6 @@ src-tauri/gen/
 # OS
 Thumbs.db
 Desktop.ini
+
+# Temp / generated images
+*.bak
